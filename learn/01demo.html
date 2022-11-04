@@ -96,6 +96,8 @@
     render()
     var controls = new THREE.OrbitControls(camera, renderer.domElement);//创建控件对象
     // controls.addEventListener('change', render);//监听鼠标、键盘事件
+    controls.target = new THREE.Vector3(200, 0, 0);
+    controls.update();
   </script>
 </body>
 </html>
